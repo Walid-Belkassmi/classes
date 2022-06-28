@@ -37,33 +37,29 @@
 
 // --------------------------------------------------------------------------------------------------
 // class Tv {
-//     constructor(brand, channel, volume){
+//     constructor(brand){
 //         this.brand = brand
 //         this.channel = 1
 //         this.volume = 50
 //     }
 
-    // addVolume = (num) => {
-    //     if(this.volume + num > 100){
-    //         this.volume = 100
+    // addVolume = () => {
+    //     if(this.volume < 100){
+    //         this.volume += 1
     //     }else{
-    //         this.volume += num
+    //         this.volume = 100
     //     }
     // }
 
-//     decreaseVolume = (num) => {
-//         if(this.volume - num < 0){
-//             this.volume = 0
-//         }else{
-//             this.volume -= num
+//     decreaseVolume = () => {
+//         if(this.volume > 0){
+//             this.volume -= 1
 //         }
 //     }
 
 //     changeChannel = (num) => {
-//         if(num > 50 || num < 0){
-//             console.log("Chaîne inexistante")
-//         }else{
-//             this.channel = num
+//         if(num >= 1 && num <= 50){
+//              this.channel = num
 //         }
 //     }
 
@@ -79,7 +75,7 @@
 
 
 // const samsung = new Tv("samsung", 1, 50)
-// samsung.addVolume(12)
+// samsung.addVolume()
 // samsung.changeChannel(13)
 
 // console.log(samsung)
